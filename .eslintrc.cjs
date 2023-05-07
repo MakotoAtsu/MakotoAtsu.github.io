@@ -12,5 +12,10 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
   },
-  
+  ignorePatterns: [
+    "node_modules/",
+    "dist/",
+    "postcss.config.js",
+    "tailwind.config.js",
+  ],
 }
