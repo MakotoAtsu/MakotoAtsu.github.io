@@ -1,3 +1,4 @@
+import { useState } from 'react'
 export interface JobCardProps {
     title: string
     company: string
@@ -9,8 +10,10 @@ export interface JobCardProps {
 }
 
 export default function JobCard(props: JobCardProps) {
+    const [isVisible, setVisible] = useState(false)
+
     return (
-        <div className="w-full">
+        <div className="w-full" onClick={() => setVisible(!isVisible)}>
             <div
                 // href="#"
                 // max-w-sm
@@ -45,14 +48,27 @@ export default function JobCard(props: JobCardProps) {
                     </p>
                 </div>
                 {props.achievement && props.achievement.length > 0 && (
-                    <div className="ml-6 pt-4">
-                        <ul className="list-disc">
-                            {props.achievement.map((item) => (
-                                <li className="font-normal text-gray-700 dark:text-gray-400">
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
+                    <div className="mt-3">
+                        <div
+                            className={`ml-6 pt-4 ${isVisible ? '' : 'hidden'}`}
+                        >
+                            <ul className="list-disc">
+                                {props.achievement.map((item, idx) => (
+                                    <li
+                                        key={idx}
+                                        className="font-normal text-gray-700 dark:text-gray-400"
+                                    >
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <a
+                            className="text-white"
+                            onClick={() => setVisible(!isVisible)}
+                        >
+                            {isVisible ? 'Hide ...' : 'Show ...'}
+                        </a>
                     </div>
                 )}
             </div>
