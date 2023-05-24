@@ -4,7 +4,6 @@ import JobCard, { JobCardProps } from './compoments/JobCard'
 import EduCard from './compoments/EduCard'
 import Title from './compoments/Title'
 import Summary from './compoments/Summary'
-import SkillCard, { SkillCardProps } from './compoments/SkillCard'
 
 const App = () => {
     const pinkoi: JobCardProps = {
@@ -185,34 +184,6 @@ const App = () => {
                 </div>
                 <EduCard />
                 <div className="my-3" />
-
-                <Title text="My Service" />
-                <div className="md:flex flex-row flex-wrap p6 w-full">
-                    <div className="mb-5 md:w-1/2 md:pr-2">
-                        {/* <SkillCard {...codingSkill} /> */}
-                    </div>
-                    <div className="mb-5 md:w-1/2 md:pl-2">
-                        {/* <SkillCard {...designSkill} /> */}
-                    </div>
-                    <div className="mb-5 md:w-1/2 md:pr-2">
-                        {/* <SkillCard {...frameworkSkill} /> */}
-                    </div>
-                    <div className="mb-5 md:w-1/2 md:pl-2">
-                        <SkillCard title="temp1" skills={['111', '222']} />
-                    </div>
-                    <div className="mb-5 md:w-1/2 md:pr-2">
-                        <SkillCard title="temp1" skills={['111', '222']} />
-                    </div>
-                    <div className="mb-5 md:w-1/2 md:pl-2">
-                        <SkillCard title="temp1" skills={['111', '222']} />
-                    </div>
-                    <div className="mb-5 md:w-1/2 md:pr-2">
-                        <SkillCard title="temp1" skills={['111', '222']} />
-                    </div>
-                    <div className="mb-5 md:w-1/2 md:pl-2">
-                        <SkillCard title="temp1" skills={['111', '222']} />
-                    </div>
-                </div>
             </div>
         </>
     )
