@@ -81,7 +81,7 @@
             "Independently developed 15 measurement equipment EAPs (Equipment Automation Program) from the ground up, enabled automatic product measurement and report-data upload.",
             "Managed and implemented POCs (proof of concepts) for 9 EAPs to automate equipment recipe selection and production.",
             "Improved 54 EAPs feature based on user demand.",
-            "Developed a Dynamic Calculation system, using C# and CodeDOM to enable dynamic source code creation, code compilation, and code execution to calculate measurement data.",
+            "Developed a Dynamic Calculation system, which allowed users to create their own calculation formula.",
             "Constructed a new system to allow Manufacturing Dept. to collect and control all factory equipment info in real-time."
         ],
         "startDate": "Feb. 2016",
@@ -98,7 +98,7 @@
         "title": "Firmware Engineer (Intern)",
         "company": "Whetron",
         "companyUrl": "http://www.whetron.com/",
-        "description": "Whetron, founded in 1983, \n                      aims to be a leading supplier of automotive electronic parts globally. \n                      Whetron offers a range of products, including remote access, parking aid systems, \n                      and keyless entry. They prioritize safety, convenience, and reliability.",
+        "description": "Whetron, founded in 1983, aims to be a leading supplier of automotive electronic parts globally. Whetron offers a range of products, including remote access, parking aid systems, and keyless entry. They prioritize safety, convenience, and reliability.",
         "achievement": [
             "Developed and maintained firmware for parking sensors.",
             "Built and implemented testing tools for products.",
