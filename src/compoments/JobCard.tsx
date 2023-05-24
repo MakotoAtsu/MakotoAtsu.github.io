@@ -26,7 +26,7 @@ const CollapseList = (props: CollapseListProps) => {
                 <span className="pl-2">{props.title}</span>
             </div>
             <div
-                className={`overflow-hidden transition-[height]`}
+                className={`overflow-hidden transition-[height] mt-2`}
                 style={{ height: `${show ? height : '0'}px` }}
             >
                 <ul ref={innerRef} className="ml-6 list-disc">
