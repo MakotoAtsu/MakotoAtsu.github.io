@@ -1,4 +1,46 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import Devider from './Devider'
+import narrow from '../assets/icon/narrow.svg'
+
+interface CollapseListProps {
+    title: string
+    items: string[]
+}
+
+const CollapseList = (props: CollapseListProps) => {
+    const [show, setShow] = useState(false)
+    const innerRef = useRef<HTMLUListElement>(null)
+    const height = innerRef.current?.clientHeight
+    return (
+        <>
+            <div
+                className="flex pt-2 items-center text-gray-400 cursor-pointer"
+                onClick={() => setShow(!show)}
+            >
+                <img
+                    className={`h-[20px] transition ${
+                        show ? '' : 'rotate-180'
+                    }`}
+                    src={narrow}
+                />
+                <span className="pl-2">{props.title}</span>
+            </div>
+            <div
+                className={`overflow-hidden transition-[height]`}
+                style={{ height: `${show ? height : '0'}px` }}
+            >
+                <ul ref={innerRef} className="ml-6 list-disc">
+                    {props.items.map((item, idx) => (
+                        <li key={idx} className="font-normal text-gray-400 ">
+                            {item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </>
+    )
+}
+
 export interface JobCardProps {
     title: string
     company: string
@@ -7,13 +49,12 @@ export interface JobCardProps {
     endDate: string
     description: string
     achievement?: string[]
+    techniques?: string[]
 }
 
 export default function JobCard(props: JobCardProps) {
-    const [isVisible, setVisible] = useState(false)
-
     return (
-        <div className="w-full" onClick={() => setVisible(!isVisible)}>
+        <div className={`w-full`}>
             <div
                 // href="#"
                 // max-w-sm
@@ -42,34 +83,28 @@ export default function JobCard(props: JobCardProps) {
                         {props.startDate} - {props.endDate}
                     </h4>
                 </div>
-                <div>
+                <div className="mb-6">
                     <p className="text-sm font-normal text-gray-700 dark:text-gray-400">
                         {props.description}
                     </p>
                 </div>
+
                 {props.achievement && props.achievement.length > 0 && (
-                    <div className="mt-3">
-                        <div
-                            className={`ml-6 pt-4 ${isVisible ? '' : 'hidden'}`}
-                        >
-                            <ul className="list-disc">
-                                {props.achievement.map((item, idx) => (
-                                    <li
-                                        key={idx}
-                                        className="font-normal text-gray-700 dark:text-gray-400"
-                                    >
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <a
-                            className="text-white"
-                            onClick={() => setVisible(!isVisible)}
-                        >
-                            {isVisible ? 'Hide ...' : 'Show ...'}
-                        </a>
-                    </div>
+                    <>
+                        <CollapseList
+                            title="Achievement"
+                            items={props.achievement}
+                        />
+                        <Devider />
+                    </>
+                )}
+                {props.techniques && props.techniques.length > 0 && (
+                    <>
+                        <CollapseList
+                            title="Technique"
+                            items={props.techniques}
+                        />
+                    </>
                 )}
             </div>
         </div>

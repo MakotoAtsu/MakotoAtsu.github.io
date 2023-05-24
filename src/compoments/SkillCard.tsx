@@ -30,27 +30,25 @@ export default function SkillCard(props: SkillCardProps) {
                 </div>
             )}
             {props.typeSkills && props.typeSkills.length > 0 && (
-                <div>
-                    {props.typeSkills.map((type) => (
-                        <>
+                <>
+                    {props.typeSkills.map((type, t_idx) => (
+                        <div key={t_idx} className="mt-2">
                             <h5 className="text-lg font-medium tracking-tight text-white">
                                 {type.type}
                             </h5>
-                            <div className="ml-6 mb-3">
-                                <ul className="list-disc">
-                                    {type.skills.map((skill, s_idx) => (
-                                        <li
-                                            key={s_idx}
-                                            className="font-normal text-gray-700 dark:text-gray-400"
-                                        >
-                                            {skill}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </>
+                            <ul className="list-disc ml-6">
+                                {type.skills.map((skill, s_idx) => (
+                                    <li
+                                        key={s_idx}
+                                        className="font-normal text-gray-700 dark:text-gray-400"
+                                    >
+                                        {skill}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     ))}
-                </div>
+                </>
             )}
             {/* {props.typeSkills.map((type, t_idx) => (
         <div className="ml-6 pt-2">

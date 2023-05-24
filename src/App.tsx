@@ -14,9 +14,18 @@ const App = () => {
         description: `Pinkoi is an online marketplace based in Taiwan, 
              founded in 2011. It is known for selling uniquely designed goods by independent designers worldwide. 
              Similar to Etsy, Pinkoi focuses on handcrafted and independent designs, but is more popular in Asia.`,
-        // Pinkoi focuses on handcrafted and independent designs, offering a variety of products including fashion, home decor, art, and more. It is popular in Asia.`,
         startDate: 'Feb. 2023',
         endDate: 'NOWADAYS',
+        techniques: [
+            'Backend: Python / Django / FastAPI',
+            'Frontend: TypeScript / React.js',
+            'Database: MySQL / Redis / AWS Athena / Elastic Search',
+            'Testing: Pytest / unittest.mock',
+            'CI/CD: GitHub Action',
+            'Cloud: AWS',
+            'Virtualization: Docker / K8s',
+            'Domain: RabbitMQ',
+        ],
     }
 
     const koobits: JobCardProps = {
@@ -34,6 +43,17 @@ const App = () => {
         ],
         startDate: 'Apr. 2022',
         endDate: 'Aug. 2022',
+        techniques: [
+            'Backend: C# / ASP.NET Core',
+            'Frontend: TypeScript / React.js',
+            'ORM: Entity Framework Core',
+            'Database: PostgreSQL / Redis',
+            'Testing: XUnit / NSubstitute',
+            'CI/CD: GitHub Action , Azure DevOps',
+            'Cloud: AWS',
+            'Virtualization: Docker / K8s',
+            'Source Control: Git',
+        ],
     }
 
     const pixis: JobCardProps = {
@@ -54,6 +74,17 @@ const App = () => {
         description: '',
         startDate: 'Mar. 2019',
         endDate: 'Mar. 2022',
+        techniques: [
+            'Backend: C# / ASP.NET / TypeScript / Electron.js',
+            'Frontend: TypeScript / Vue.js',
+            'Database: SQL Server / Redis',
+            'ORM: Entity Framework / Dapper',
+            'Testing: XUnit / NSubstitute',
+            'CI/CD: Azure DevOps',
+            'Virtualization: Docker / Docker-Compose / MACVLAN',
+            'Source Control: Git',
+            'Domain: TCP/IP / ARP / 902.1Q / 802.1x / Radius / DHCP / DNS / SNMP / LDAP / AD',
+        ],
     }
 
     const mxic: JobCardProps = {
@@ -76,6 +107,13 @@ const App = () => {
         ],
         startDate: 'Feb. 2016',
         endDate: 'Mar. 2019',
+        techniques: [
+            'Backend: C# / ASP.NET / WPF / WinForm',
+            'Database: SQL Server / MySQL',
+            'ORM: Entity Framework / ADO.NET',
+            'Domain: Semiconductor / Automation / SECS-GEM / UART (RS-232) / Message Queue (IBM MQ)',
+            'Sourcce Control: SVN',
+        ],
     }
 
     const whetron: JobCardProps = {
@@ -93,35 +131,7 @@ const App = () => {
         ],
         startDate: 'Jul. 2014',
         endDate: 'Jul. 2015',
-    }
-
-    const codingSkill: SkillCardProps = {
-        title: 'Coding',
-        skills: ['C#', 'TypeScript (JavaScript)', 'Python', 'SQL (T-SQL)'],
-    }
-
-    const designSkill: SkillCardProps = {
-        title: 'Design',
-        skills: ['RESTful API', 'OOD / Design Pattern', 'TDD/DDD'],
-    }
-
-    const frameworkSkill: SkillCardProps = {
-        title: 'Framework',
-        typeSkills: [
-            {
-                type: 'Frontend',
-                skills: ['React', 'Vue'],
-            },
-            {
-                type: 'Backend',
-                skills: [
-                    'ASP.NET Core',
-                    'Node Express',
-                    'Django',
-                    'FastAPI',
-                ],
-            },
-        ],
+        techniques: ['ANSI C / MPASM assembly'],
     }
 
     return (
@@ -179,13 +189,13 @@ const App = () => {
                 <Title text="My Service" />
                 <div className="md:flex flex-row flex-wrap p6 w-full">
                     <div className="mb-5 md:w-1/2 md:pr-2">
-                        <SkillCard {...codingSkill} />
+                        {/* <SkillCard {...codingSkill} /> */}
                     </div>
                     <div className="mb-5 md:w-1/2 md:pl-2">
-                        <SkillCard {...designSkill} />
+                        {/* <SkillCard {...designSkill} /> */}
                     </div>
                     <div className="mb-5 md:w-1/2 md:pr-2">
-                        <SkillCard {...frameworkSkill} />
+                        {/* <SkillCard {...frameworkSkill} /> */}
                     </div>
                     <div className="mb-5 md:w-1/2 md:pl-2">
                         <SkillCard title="temp1" skills={['111', '222']} />
