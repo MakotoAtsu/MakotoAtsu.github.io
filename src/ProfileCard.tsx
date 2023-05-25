@@ -7,6 +7,7 @@ import position_svg from './assets/icon/position.svg'
 import mail_svg from './assets/icon/mail.svg'
 import lang_svg from './assets/icon/lang.svg'
 import hand_wave from './assets/icon/hand_wave.svg'
+import resume from '../public/ChangYuChen.pdf'
 
 export default function ProfileCard() {
     return (
@@ -28,6 +29,7 @@ export default function ProfileCard() {
                         id="hire"
                         icon={hand_wave}
                         text="Available for hire"
+                        linkUrl={resume}
                     />
                 </div>
                 <div className="pt-3">

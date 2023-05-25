@@ -23,9 +23,9 @@
         "companyUrl": "https://www.koobits.com/",
         "description": "KooBits is a platform that provides online learning solutions, primarily focused on mathematics for primary school students. It combines interactive digital content, a motivational system, and personalized learning to engage students and improve their learning outcomes.",
         "achievement": [
-            "Introduce UnitTest in 2 services and enable TDD.",
-            "Import the Unit Of Work pattern to solve the performance of DB's connection too much issue.",
-            "Integrating GitHub Action to enable CI after creating Pull-Request."
+            "Introduced Unit Testing into two services and enabled Test-Driven Development (TDD).",
+            "Implemented the Unit of Work pattern to address issues with excessive database connection usage.",
+            "Integrated GitHub Actions to enable Continuous Integration (CI) after creating a pull request."
         ],
         "startDate": "Apr. 2022",
         "endDate": "Aug. 2022",
@@ -47,15 +47,15 @@
         "companyUrl": "https://www.pixis.com.tw/",
         "description": "PIXIS is a company based in Taiwan, thay provide a comprehensive solution for network access control, IP address management, and device discovery. PIXIS's solution is designed to help organizations manage their network infrastructure and security.",
         "achievement": [
-            "Led team product development for a comprehensive solution of Network Access Control, IPAM, and Device Discovery.",
-            "Dockerized product, and reduced network probe software IP occupancy by 45%",
-            "Introduced HAProxy and Redis, enabling high availability characteristics for the product.",
-            "Separated frontend and backend, introduce JS framework (Vue.js) and modern software architecture to speed up development time.",
-            "Migrated from .Net Framework to .Net Core, enhancing product performance and security.",
-            "Built a new Custom Report feature to provide users the ability to create any reports.",
-            "Managed support of 802.1x dynamic VLAN assignment, and strengthen product competitiveness.",
-            "Optimized loading performance, and increase the concurrent amount by 30% every 30 minutes.",
-            "Created CI/CD, shorten product development life cycle."
+            "Led product development within the team for a comprehensive solution of Network Access Control, IPAM, and Device Discovery.",
+            "Dockerized the product, reducing network probe software IP occupancy by 45%.",
+            "Introduced HAProxy and Redis to enable high availability characteristics for the product.",
+            "Separated the frontend and backend, introducing a JS framework (Vue.js) and modern software architecture to expedite development time.",
+            "Transitioned from .Net Framework to .Net Core, enhancing both the product's performance and security.",
+            "Built a new Custom Report feature, providing users with the ability to create various reports.",
+            "Managed support of 802.1x dynamic VLAN assignment and strengthened product competitiveness.",
+            "Optimized loading performance and increased concurrent usage by 30% every 30 minutes.",
+            "Created a CI/CD pipeline, which shortened the product development life cycle."
         ],
         "startDate": "Mar. 2019",
         "endDate": "Mar. 2022",
@@ -78,11 +78,11 @@
         "description": "Macronix International Co., Ltd. is a company based in Taiwan that specializes in non-volatile memory semiconductor solutions. It's one of the leading manufacturers globally in this area. The company's product portfolio includes NOR Flash, NAND Flash, and ROM products which are used in a wide range of electronic devices, including computers, consumer electronics, and industrial automation systems.",
         "achievement": [
             "Designed and improved automation software for semiconductor equipment.",
-            "Independently developed 15 measurement equipment EAPs (Equipment Automation Program) from the ground up, enabled automatic product measurement and report-data upload.",
-            "Managed and implemented POCs (proof of concepts) for 9 EAPs to automate equipment recipe selection and production.",
-            "Improved 54 EAPs feature based on user demand.",
-            "Developed a Dynamic Calculation system, which allowed users to create their own calculation formula.",
-            "Constructed a new system to allow Manufacturing Dept. to collect and control all factory equipment info in real-time."
+            "Independently developed 15 Equipment Automation Programs (EAPs) from the ground up, enabling automatic product measurement and report-data upload.",
+            "Managed and implemented proofs of concept (POCs) for 9 EAPs to automate equipment recipe selection and production.",
+            "Enhanced 54 EAPs based on user demands.",
+            "Developed a Dynamic Calculation system, allowing users to create their own calculation formulas.",
+            "Constructed a new system enabling the Manufacturing Department to collect and control all factory equipment information in real-time."
         ],
         "startDate": "Feb. 2016",
         "endDate": "Mar. 2019",
@@ -101,8 +101,8 @@
         "description": "Whetron, founded in 1983, aims to be a leading supplier of automotive electronic parts globally. Whetron offers a range of products, including remote access, parking aid systems, and keyless entry. They prioritize safety, convenience, and reliability.",
         "achievement": [
             "Developed and maintained firmware for parking sensors.",
-            "Built and implemented testing tools for products.",
-            "Built a new testing tool for smart-key, allowing operators faster and more accurate product testing execution."
+            "Constructed and implemented testing tools for products.",
+            "Built a new testing tool for smart keys, facilitating quicker and more precise product testing execution by operators."
         ],
         "startDate": "Jul. 2014",
         "endDate": "Jul. 2015",

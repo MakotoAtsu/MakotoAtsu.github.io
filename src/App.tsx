@@ -35,8 +35,7 @@ const App = () => {
             >
                 <Title text="Who am I ?" />
                 <Summary />
-
-                <Title text="Personal Project" />
+                <Title className='mt-[20vh]' text="Personal Project" />
                 <div className="w-full grid xl:grid-cols-2 gap-4">
                     <ProjectCard
                         title="AspNetCore_Vite_Starter"
