@@ -4,7 +4,7 @@ export default function Summary() {
     )
 
     return (
-        <div id="summary">
+        <div id="summary" className="mb-6">
             {content("Hi there! I'm 育誠 (Yu Chen).")}
             {content(
                 "I'm your go-to guy for all things software development, with a cool 7 years and a B.S. degree in Computer Science."
