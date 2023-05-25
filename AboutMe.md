@@ -4,14 +4,17 @@
 
 ## Summary  
 
-Professional software developer with 7+ years of experience 
-B.S degree in Computer Science
+Hi there! I'm Yu Chen.
 
-Professional in C# .Net and Microsoft tech stack   
-Skilled in Typescript, Vue.js, React.js   
-Skilled in Python, Node.js  
-Solid problem solving, system design, and learning skills   
-Team player and team manager with strong collaborative,communication and extensive cross-group coordination skills  
+I'm your go-to guy for all things software development, with a cool 7 years and a B.S. degree in Computer Science.
+
+When I'm not writing killer code, you might catch me snapping a few pictures, fishing for shrimp, mastering the art of table tennis, or simply coding just for the pure fun of it!
+
+In the coding world, I'm pretty handy with C#, and I'm also no stranger to TypeScript and Python either.
+
+If you are looking for someone to handle your Asp.Net, Django/FastAPI, or even Node.js applications, that's exactly what I specialize in!
+
+I'm also a bit of a problem-solving whiz, I've got system design down to an art, and I'm always hungry to learn more. How's that for a well-rounded techie?
 
 <br>
 
