@@ -13,13 +13,14 @@ const App = () => {
             <Background />
             <div
                 id="profile-card"
-                className={`
-                md:fixed 
-                md:flex 
-                md:w-[24vw] 
-                md:h-[92vh]
-                md:pt-0
-                pt-20 flex-col justify-center`}
+                className={[
+                    'md:fixed ',
+                    'md:flex ',
+                    'md:w-[24vw] ',
+                    'md:h-[92vh]',
+                    'md:pt-0',
+                    'pt-20 flex-col justify-center',
+                ].join(' ')}
             >
                 <ProfileCard />
             </div>
@@ -35,7 +36,7 @@ const App = () => {
             >
                 <Title text="Who am I ?" />
                 <Summary />
-                <Title className='mt-[20vh]' text="Personal Project" />
+                <Title className="mt-[20vh]" text="Personal Project" />
                 <div className="w-full grid xl:grid-cols-2 gap-4">
                     <ProjectCard
                         title="AspNetCore_Vite_Starter"

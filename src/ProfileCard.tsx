@@ -8,6 +8,7 @@ import mail_svg from './assets/icon/mail.svg'
 import lang_svg from './assets/icon/lang.svg'
 import hand_wave from './assets/icon/hand_wave.svg'
 import resume from '../public/ChangYuChen.pdf'
+import Tooltip from './compoments/Tooltip'
 
 export default function ProfileCard() {
     return (
@@ -24,14 +25,17 @@ export default function ProfileCard() {
                 <Typography variant="h3" className="text-lg">
                     (Chang Yu Chen)
                 </Typography>
-                <div className="text-red-600 text-lg font-semibold">
-                    <IconLink
-                        id="hire"
-                        icon={hand_wave}
-                        text="Available for hire"
-                        linkUrl={resume}
-                    />
-                </div>
+
+                <Tooltip tip="Click to download my resume">
+                    <div className="text-red-600 text-lg font-semibold">
+                        <IconLink
+                            id="hire"
+                            icon={hand_wave}
+                            text="Available for hire"
+                            linkUrl={resume}
+                        />
+                    </div>
+                </Tooltip>
                 <div className="pt-3">
                     <IconLink
                         id="github-info"

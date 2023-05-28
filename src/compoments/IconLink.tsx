@@ -8,7 +8,7 @@ interface Props {
 const IconLink = (props: Props) => {
     return (
         <div id={props.id} className="flex pt-2 items-center">
-            <img className="h-[20px]" src={props.icon} />
+            <img className="h-[20px]" src={props.icon} alt="icon" />
             {props.linkUrl ? (
                 <a
                     target="_blank"
