@@ -55,11 +55,7 @@ export interface JobCardProps {
 export default function JobCard(props: JobCardProps) {
     return (
         <div className={`w-full`}>
-            <div
-                // href="#"
-                // max-w-sm
-                className="block p-6 border rounded-lg shadow bg-gray-900 border-gray-700"
-            >
+            <div className="block p-6 border rounded-lg shadow bg-gray-900 border-gray-700">
                 <div className="md:flex justify-between">
                     <h3 className="inline-block mb-2 text-2xl font-bold tracking-tight text-white">
                         {props.title}
