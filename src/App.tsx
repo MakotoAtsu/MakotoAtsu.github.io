@@ -100,7 +100,8 @@ const App = () => {
                 </div>
                 <EduCard />
                 <div className="my-3" />
-
+                
+                <Title text="See how people look at me" />
                 <div className="w-full rounded-lg shadow bg-gray-900 border-gray-700 border text-gray-400">
                     <Carousel>
                         <RefCard {...HankRef} />
